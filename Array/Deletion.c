@@ -20,10 +20,12 @@ int main(){
 int A[]={0,1,2,3,4,5,6};
 int size=sizeof(A)/sizeof(int);
 int index=4;
-
+printf("The element to be deleted \n %d\n",index);
 int  capacity=size+1;
+printf("-----------Before Deletion-----\n");
 PrintArray(A,size);
 
 insertion( A, size, index,capacity);
+printf("-----------After Deletion-----\n");
 PrintArray(A,size-1);
 }

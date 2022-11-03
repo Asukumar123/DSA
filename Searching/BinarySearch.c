@@ -3,18 +3,15 @@ int Binary_Search(int arr[],int size, int element){
 int low ,high,mid;
 low=0;
 high=size-1;
-
-
-
 while(low<=high){
 
 mid=(low+high)/2;  
-if(element == arr[mid])
+if( arr[mid] == element)
    return mid;
-else if(element<arr[mid])
- high=mid-1;
+else if(arr[mid]<element)
+  low = mid+1;
 else 
-low=mid+1;
+ high = mid -1;
 }
 return -1;
 }

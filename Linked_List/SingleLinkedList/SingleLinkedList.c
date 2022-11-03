@@ -14,9 +14,11 @@ void traversal(struct Node *ptr){
     }
     
 }
+
 int main (){
     //declaring pointer 
 struct Node *head,*second,*third;
+
 
 
 // assigning memory to pointer 

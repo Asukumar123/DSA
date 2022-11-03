@@ -54,11 +54,13 @@ void MergeSort(int A[],int low, int high){
 
 int main()
     {
-       
-        int A[]={1,3,2,5,4};
+         int A[]={1,3,2,5,4};
         int n=sizeof(A)/sizeof(int);
+      
+           printf("---------The Orginal Array-------------\n");
        PrintArray( A ,n);
       MergeSort( A, 0,4);
+         printf("---------The Sorted Array-------------\n");
        PrintArray( A ,n);
       
       return 0;

@@ -15,7 +15,7 @@ void BubbleSort(int *A,int n){
     int temp;
 int flag =0;
  for( int i=0;i<n-1;i++ ){
-printf("Sorted in %d Steps\n",i+1);
+printf("Sorted in %d Steps...........\n",i+1);
 flag =1;
 
 for(int j=0;j<n-1-i;j++){
@@ -35,11 +35,12 @@ return;
 
 int main()
 {
-    int A[]={1,2,6,4};
+    int A[]={1,2,3,4};
 int n=sizeof(A)/sizeof(int);
-
+printf("---------The Orginal Array-------------\n");
  PrintArray( A ,n);
  BubbleSort( A, n);
+ printf("---------The Sorted Array-------------\n");
  PrintArray( A ,n);
 
 return 0;

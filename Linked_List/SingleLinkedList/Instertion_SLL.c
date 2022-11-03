@@ -22,8 +22,9 @@ struct Node * insertBegin(struct Node *head,int data){
 
 struct Node * insertEnd(struct Node *head,int data){
     struct Node *ptr=(struct Node*)malloc(sizeof(struct Node));
+    struct Node *p=head;
       ptr->data =data;
-      struct Node *p=head;
+      
        while(p->next!=NULL){
         p=p->next;
         }

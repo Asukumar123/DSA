@@ -17,6 +17,7 @@ int partition(int A[],int low,int high){
     i=low+1;
     j=high;
     int pivot=A[low];
+    // Dry Run kar Lena bsdk
    do{
     while(A[i]<=pivot){
         i++;
@@ -55,8 +56,10 @@ int main()
        
         int A[]={1,3,2,5,4};
         int n=sizeof(A)/sizeof(int);
+           printf("---------The Orginal Array-------------\n");
        PrintArray( A ,n);
       QuickSort( A,0,n-1);
+        printf("---------The Sorted Array-------------\n");
        PrintArray( A ,n);
       
       return 0;
