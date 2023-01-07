@@ -1,3 +1,4 @@
+// i am making some changes to this repository to demonstrate the forking and pull request machanism
 #include<stdio.h>
 void PrintArray(int A[],int size){
     for(int i=0; i<size;i++){
